@@ -1,0 +1,47 @@
+#subtraction of 2 matrices:-
+a=[]
+m=int(input('Enter no.of rows:'))
+n=int(input('Enter no.of columns:'))
+for i in range(m):
+    row=[]
+    for i in range(n):
+        row.append(int(input()))
+    a.append(row)
+print(a)
+b=[]
+m=int(input('Enter no.of rows:'))
+n=int(input('Enter no.of columns:'))
+for i in range(m):
+    row=[]
+    for i in range(n):
+        row.append(int(input()))
+    b.append(row)
+print(b)        
+result=[[0,0],[0,0]]
+for i in range(m):
+    for j in range(n):
+        result[i][j]=a[i][j]-b[i][j]
+print('Resultant matrix:',)
+for i in range(m):
+    for i in range(n):
+        print(result[i][j],end=' ')
+    print()    
+OUTPUT:-
+Enter no.of rows:2
+Enter no.of columns:2
+1
+2
+3
+4
+[[1, 2], [3, 4]]
+Enter no.of rows:2
+Enter no.of columns:2
+1
+2
+3
+4
+[[1, 2], [3, 4]]
+Resultant matrix:
+0 0 
+0 0 
+    
