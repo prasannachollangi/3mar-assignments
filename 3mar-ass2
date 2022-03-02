@@ -1,0 +1,48 @@
+#Multiplication of 2 matrices:-
+a=[]
+m=int(input('Enter no.of rows:'))
+n=int(input('Enter no.of columns:'))
+for i in range(m):
+    row=[]
+    for i in range(n):
+        row.append(int(input()))
+    a.append(row)
+print(a)
+b=[]
+m=int(input('Enter no.of rows:'))
+n=int(input('Enter no.of columns:'))
+for i in range(m):
+    row=[]
+    for i in range(n):
+        row.append(int(input()))
+    b.append(row)
+print(b)        
+c=[0,0],[0,0]
+for i in range(len(a)):
+    for j in range(len(b)):
+        for k in range(len(b)):
+           c[i][j]=c[i][j]+a[i][k]*b[k][j]
+print('Resultant matrix:',)
+for i in range(m):
+    for j in range(n):
+        print(c[i][j],end=' ')
+    print()    
+ OUTPUT:-
+ Enter no.of rows:2
+Enter no.of columns:2
+1
+2
+3
+4
+[[1, 2], [3, 4]]
+Enter no.of rows:2
+Enter no.of columns:2
+1
+2
+3
+4
+[[1, 2], [3, 4]]
+Resultant matrix:
+7 10 
+15 22 
+    
